@@ -119,3 +119,38 @@ main aside {
     }
     
 } 
+
+/* Punto de ruptura para móviles */
+
+@media (max-width: 480px) {
+   
+    .container {
+        max-width: 480px;
+        min-width: 320px;
+    }
+    header div.gris01 {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    header div.gris01 :nth-child(even) {
+        flex-grow: 1;
+     }
+
+     .gris01 div {
+      margin-top:0; 
+     }
+     .gris01 div:last-child {
+        margin-bottom:0; 
+       }
+
+
+    .art01 {
+        display: block;
+        height: auto;
+    }
+    .azul01 {
+        width: initial;
+        margin-bottom: 20px;
+    }
+}
