@@ -101,3 +101,21 @@ main aside {
 .azul02 {
     background-color: var(--azul02);
 }
+
+/* Punto de ruptura para tablets */
+
+@media (max-width: 748px) {
+    
+    .container {
+        max-width: 748px;
+    }
+    
+    main {
+        background-color: var(--amarillo01);
+        display: block;
+    }
+    main section, main aside {
+        width: initial;
+    }
+    
+} 
